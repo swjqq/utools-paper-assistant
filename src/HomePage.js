@@ -108,6 +108,15 @@ export default class HomePage extends React.Component {
 
   handleSettingsOut = () => {
     this.setState({ launchSettingsPage: false })
+
+    // 处理输入文本
+    let outValue = this.state.inputText
+    for (let key in textHandlers) {
+      if (textHandlers[key].activate) {
+        outValue = textHandlers[key].executor(outValue)
+      }
+    };
+    this.setState({ outputText: outValue })
   }
 
 
