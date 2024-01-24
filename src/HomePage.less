@@ -1,0 +1,48 @@
+.home-page-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .MuiFilledInput-root {
+        border-radius: 0;
+    }
+
+    .input-container {
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        padding: 5px;
+
+        .btn-input-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            .btn-settings-container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+    }
+
+    .output-container {
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        padding: 5px;
+
+        .btn-output-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+}

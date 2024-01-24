@@ -1,0 +1,26 @@
+{
+  "main": "index.html",
+  "logo": "logo.png",
+  "pluginSetting": {
+    "single": false
+  },
+  "features": [
+    {
+      "code": "paper-assistant",
+      "explain": "去除复制PDF中的文字时出现莫名其妙的空格、换行、全角字符或乱码",
+      "cmds": [
+        "论文工具",
+        "论文",
+        "paper assistant",
+        "paper",
+        "assistant",
+        "pa",
+        {
+          "type": "regex",
+          "match": "/^pa/i",
+          "label": "论文工具"
+        }
+      ]
+    }
+  ]
+}
